@@ -26,7 +26,7 @@ def xmind(ydstruct,xstruct):
         for children in ydstruct["child"]:
             xmind(findid(children),temp1)
 #Transfer the .mindmap file into a dict
-with open ('input.mindmap','r') as ydMind:
+with open ('input.mindmap','r', encoding='UTF-8') as ydMind:
     ydcontent = ydMind.read()
 #Load the "content.json" in Xmind file, which includes basic config and style in xmind file
 with open ('Templates\XmindJsonTemplate.json','r') as xmindtem:
