@@ -42,7 +42,6 @@ for node in ydjson["nodes"]:
         parent["child"].append(node["id"])
 root = findid("root")
 rootid = root["id"]
-x = "xx"
 rootTopic = Xmind["rootTopic"]
 rootTopic["id"] = root["id"]
 rootTopic["title"] = root["topic"]
